@@ -1,0 +1,853 @@
+# BLASTP 2.14.0+
+# Query: 4CRP_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4CRP_A	XP_033229347.1	34.000	100	64	1	8	107	2775	2872	4.07e-05	53.1
+# BLASTP 2.14.0+
+# Query: 4JJC_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4JJC_A	KAJ3175743.1	40.385	52	30	1	4	55	9	59	0.004	45.1
+# BLASTP 2.14.0+
+# Query: 4J9F_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4J9F_A	TGZ63904.1	36.923	65	36	2	1	60	593	657	0.009	44.3
+# BLASTP 2.14.0+
+# Query: 1ZH8_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1ZH8_A	WP_090222821.1	28.144	334	220	7	3	319	3	333	5.11e-35	140
+# BLASTP 2.14.0+
+# Query: 3EG1_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3EG1_B	4J9B_A	30.189	53	37	0	3	55	8	60	4.20e-04	44.7
+# BLASTP 2.14.0+
+# Query: 1KKL_I
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1KKL_I	MBQ9168359.1	40.000	80	48	0	4	83	5	84	3.23e-10	62.0
+# BLASTP 2.14.0+
+# Query: 2EGE_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2EGE_A	XP_001750438.1	38.776	49	30	0	25	73	55	103	0.50	39.7
+# BLASTP 2.14.0+
+# Query: 5AWW_G
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5AWW_G	RYO87414.1	29.545	44	31	0	2	45	294	337	5.9	37.0
+# BLASTP 2.14.0+
+# Query: 6CWY_D
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6CWY_D	XP_055844029.1	22.780	518	345	8	5	471	9	522	2.65e-43	174
+# BLASTP 2.14.0+
+# Query: 6KBR_C
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6KBR_C	XP_025780864.1	40.741	54	30	1	1	52	35	88	1.40e-06	51.6
+# BLASTP 2.14.0+
+# Query: 6A5I_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6A5I_A	WP_025664180.1	45.238	42	21	1	20	61	765	804	2.6	37.4
+# BLASTP 2.14.0+
+# Query: 1JU5_C
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1JU5_C	MBO5773275.1	36.364	55	33	2	3	55	1101	1155	9.5	35.4
+# BLASTP 2.14.0+
+# Query: 3VPZ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3VPZ_A	WP_128730162.1	26.814	317	230	1	1	317	11	325	6.29e-47	172
+# BLASTP 2.14.0+
+# Query: 4XL5_C
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+4XL5_C	4ZV6_A	40.092	217	130	0	16	232	61	277	2.19e-38	146
+4XL5_C	4ZV6_A	41.206	199	117	0	16	214	30	228	1.84e-33	133
+4XL5_C	4ZV6_A	41.304	184	108	0	31	214	14	197	1.66e-30	125
+4XL5_C	4ZV6_A	37.989	179	111	0	5	183	81	259	1.73e-25	112
+# BLASTP 2.14.0+
+# Query: 6AEX_U
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6AEX_U	XP_021075217.1	33.149	181	102	4	3	164	123	303	1.65e-22	102
+# BLASTP 2.14.0+
+# Query: 2GBQ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2GBQ_A	CBX28706.1	48.485	33	17	0	11	43	365	397	6.1	35.8
+# BLASTP 2.14.0+
+# Query: 3N29_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3N29_B	MBR5894970.1	24.103	390	259	9	5	359	3	390	1.45e-29	129
+# BLASTP 2.14.0+
+# Query: 1KKL_J
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1KKL_J	MCI8879991.1	35.294	85	55	0	2	86	2	86	5.94e-13	69.3
+# BLASTP 2.14.0+
+# Query: 5LV6_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5LV6_B	MBW4623047.1	54.167	24	11	0	8	31	644	667	4.4	35.4
+# BLASTP 2.14.0+
+# Query: 5GAE_g
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5GAE_g	YP_009296916.1	20.321	374	246	13	29	374	34	383	3.57e-07	65.1
+# BLASTP 2.14.0+
+# Query: 3E18_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3E18_B	WP_013487105.1	25.301	332	230	2	2	315	5	336	1.24e-31	132
+# BLASTP 2.14.0+
+# Query: 5USD_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5USD_A	WP_271226507.1	31.902	326	213	6	3	322	3	325	1.16e-55	194
+# BLASTP 2.14.0+
+# Query: 5IEJ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5IEJ_A	TSD90531.1	24.444	90	68	0	29	118	31	120	0.001	47.4
+# BLASTP 2.14.0+
+# Query: 6FIC_T
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 3 hits found
+6FIC_T	GBN10672.1	28.959	221	157	0	23	243	125	345	5.53e-29	124
+6FIC_T	GBN10672.1	26.119	134	87	3	20	148	245	371	0.001	52.0
+6FIC_T	GBN10672.1	25.806	93	68	1	129	221	109	200	0.11	46.2
+# BLASTP 2.14.0+
+# Query: 3T5M_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3T5M_B	WP_239416342.1	32.000	325	221	0	5	329	5	329	2.34e-58	202
+# BLASTP 2.14.0+
+# Query: 1GBR_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1GBR_A	MCE7887487.1	52.381	21	10	0	36	56	167	187	9.4	36.2
+# BLASTP 2.14.0+
+# Query: 1ZH8_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1ZH8_B	WP_011011672.1	27.052	329	222	9	2	318	3	325	1.92e-28	123
+# BLASTP 2.14.0+
+# Query: 2JQ8_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2JQ8_A	KAI8959149.1	36.842	38	24	0	9	46	757	794	7.1	35.0
+# BLASTP 2.14.0+
+# Query: 3EG3_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3EG3_A	WP_245036242.1	29.508	61	42	1	2	62	17	76	0.36	38.5
+# BLASTP 2.14.0+
+# Query: 3U1B_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3U1B_B	WP_042019173.1	33.435	329	218	1	3	330	5	333	1.10e-51	184
+# BLASTP 2.14.0+
+# Query: 1WWW_X
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1WWW_X	CAH2274285.1	32.653	98	63	2	4	101	297	391	2.05e-04	50.4
+# BLASTP 2.14.0+
+# Query: 2EC9_U
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2EC9_U	MCD8226695.1	27.193	114	77	1	1	114	245	352	4.1	38.9
+# BLASTP 2.14.0+
+# Query: 3EG0_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3EG0_A	KAJ3320323.1	35.714	56	35	1	2	56	43	98	0.30	38.1
+# BLASTP 2.14.0+
+# Query: 1AWO_A
+# Database: blastdb/nr
+# 0 hits found
+# BLASTP 2.14.0+
+# Query: 1ABO_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1ABO_A	5NP3_A	29.091	55	39	0	3	57	7	61	4.96e-04	44.7
+# BLASTP 2.14.0+
+# Query: 4JVO_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4JVO_A	WP_239416342.1	30.247	324	226	0	9	332	6	329	6.54e-54	190
+# BLASTP 2.14.0+
+# Query: 3EG2_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3EG2_A	XP_009058910.1	31.579	57	38	1	6	62	132	187	0.70	38.9
+# BLASTP 2.14.0+
+# Query: 4MO3_M
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+4MO3_M	XP_053230696.1	31.373	153	105	0	2	154	1969	2121	2.81e-21	101
+4MO3_M	XP_053230696.1	25.926	162	98	4	2	154	1816	1964	5.55e-08	63.2
+# BLASTP 2.14.0+
+# Query: 6ITC_Y
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6ITC_Y	WP_053605192.1	17.822	404	323	1	4	398	5	408	1.33e-25	119
+# BLASTP 2.14.0+
+# Query: 1DAN_T
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1DAN_T	MBR4057172.1	30.667	75	43	2	3	68	129	203	5.8	37.0
+# BLASTP 2.14.0+
+# Query: 6R3C_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6R3C_A	WP_015135665.1	28.244	131	64	4	26	134	3729	3851	1.0	42.0
+# BLASTP 2.14.0+
+# Query: 1KKL_H
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1KKL_H	KFZ26839.1	32.927	82	55	0	3	84	4	85	1.47e-09	60.5
+# BLASTP 2.14.0+
+# Query: 3GJZ_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3GJZ_B	WP_156857383.1	29.032	310	202	5	9	307	7	309	1.31e-38	150
+# BLASTP 2.14.0+
+# Query: 2E89_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2E89_B	NOR54468.1	22.097	267	192	6	7	260	2	265	3.35e-05	58.2
+# BLASTP 2.14.0+
+# Query: 5O2M_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5O2M_A	MBR0264335.1	35.616	73	37	3	2	67	67	136	0.83	39.7
+# BLASTP 2.14.0+
+# Query: 4MI1_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4MI1_A	WP_239416342.1	32.110	327	215	4	4	323	5	331	1.53e-50	181
+# BLASTP 2.14.0+
+# Query: 4INJ_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4INJ_B	WP_040375633.1	26.688	311	228	0	5	315	3	313	2.07e-44	165
+# BLASTP 2.14.0+
+# Query: 1WY5_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1WY5_B	HHJ64621.1	24.262	305	219	6	4	302	4	302	4.79e-18	94.7
+# BLASTP 2.14.0+
+# Query: 2C4F_T
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2C4F_T	WP_085210689.1	42.105	57	27	3	17	70	260	313	2.3	38.1
+# BLASTP 2.14.0+
+# Query: 1KKM_J
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1KKM_J	AIO19548.1	38.750	80	48	1	5	83	5	84	4.47e-11	64.3
+# BLASTP 2.14.0+
+# Query: 6PNW_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6PNW_A	A7X4S0.1	37.705	61	38	0	1	61	22	82	9.53e-05	47.0
+# BLASTP 2.14.0+
+# Query: 5USD_D
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5USD_D	HDI06414.1	30.154	325	220	5	4	323	3	325	3.91e-48	175
+# BLASTP 2.14.0+
+# Query: 2C4F_U
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2C4F_U	NWT19022.1	29.730	111	73	2	10	115	95	205	4.46e-07	58.2
+# BLASTP 2.14.0+
+# Query: 3T5M_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3T5M_A	WP_016428665.1	30.864	324	224	0	8	331	6	329	2.41e-58	202
+# BLASTP 2.14.0+
+# Query: 1P1A_A
+# Database: blastdb/nr
+# 0 hits found
+# BLASTP 2.14.0+
+# Query: 5K99_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5K99_A	WP_016428665.1	33.739	329	211	5	3	324	1	329	4.68e-58	201
+# BLASTP 2.14.0+
+# Query: 2DSQ_G
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2DSQ_G	XP_046903160.1	44.000	50	26	1	22	69	208	257	0.075	42.0
+# BLASTP 2.14.0+
+# Query: 5CH4_Y
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5CH4_Y	5CH4_Y	19.512	369	297	0	35	403	35	403	5.50e-21	106
+# BLASTP 2.14.0+
+# Query: 1SSU_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1SSU_A	WP_150304348.1	38.095	42	24	1	12	51	537	578	7.9	35.4
+# BLASTP 2.14.0+
+# Query: 6P6B_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6P6B_A	PIV86900.1	27.381	84	59	1	9	90	221	304	0.30	41.2
+# BLASTP 2.14.0+
+# Query: 2CSI_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2CSI_A	CBY43611.1	26.866	67	48	1	9	74	1	67	5.7	35.4
+# BLASTP 2.14.0+
+# Query: 1ABQ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1ABQ_A	WP_091394869.1	39.216	51	30	1	5	55	29	78	2.7	37.0
+# BLASTP 2.14.0+
+# Query: 1KKM_I
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1KKM_I	WGK68995.1	33.750	80	52	1	1	79	1	80	9.11e-09	58.5
+# BLASTP 2.14.0+
+# Query: 1SZ2_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1SZ2_A	WP_261897502.1	25.392	319	225	5	4	313	7	321	5.31e-32	132
+# BLASTP 2.14.0+
+# Query: 2O88_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2O88_A	1BBZ_A	27.273	55	40	0	3	57	3	57	7.20e-04	44.3
+# BLASTP 2.14.0+
+# Query: 4J9E_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4J9E_A	5NP3_A	30.909	55	38	0	2	56	7	61	0.001	43.9
+# BLASTP 2.14.0+
+# Query: 1BBZ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1BBZ_A	1BBZ_A	27.273	55	40	0	3	57	3	57	0.004	42.0
+# BLASTP 2.14.0+
+# Query: 4H1H_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4H1H_B	KKP28839.1	24.390	328	220	9	1	308	1	320	8.33e-23	107
+# BLASTP 2.14.0+
+# Query: 6FGN_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6FGN_A	WP_072822155.1	40.541	37	20	1	45	81	163	197	0.51	41.6
+# BLASTP 2.14.0+
+# Query: 4JJD_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4JJD_A	WP_282244536.1	43.590	39	22	0	15	53	322	360	0.39	39.3
+# BLASTP 2.14.0+
+# Query: 5FD8_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5FD8_A	WP_271226507.1	27.019	322	228	6	4	320	3	322	4.74e-41	156
+# BLASTP 2.14.0+
+# Query: 1DAN_U
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1DAN_U	XP_030724578.1	25.000	116	82	2	1	112	121	235	0.012	45.8
+# BLASTP 2.14.0+
+# Query: 3HXJ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+3HXJ_A	MCK4329351.1	25.890	309	217	4	1	297	132	440	3.01e-35	144
+3HXJ_A	MCK4329351.1	27.437	277	189	5	38	302	130	406	2.74e-34	141
+3HXJ_A	MCK4329351.1	25.993	277	194	4	4	269	176	452	9.51e-31	131
+3HXJ_A	MCK4329351.1	23.780	164	84	4	4	159	336	466	0.008	50.8
+# BLASTP 2.14.0+
+# Query: 3HXJ_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 4 hits found
+3HXJ_B	MCK4329351.1	27.099	262	178	3	37	285	139	400	3.94e-31	132
+3HXJ_B	MCK4329351.1	27.007	274	184	4	28	285	167	440	2.20e-28	125
+3HXJ_B	MCK4329351.1	28.272	191	135	1	97	285	130	320	2.25e-24	114
+3HXJ_B	MCK4329351.1	28.632	234	154	5	37	257	219	452	3.25e-24	113
+# BLASTP 2.14.0+
+# Query: 4JJB_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4JJB_A	CDH58528.1	37.736	53	31	1	1	51	510	562	0.079	41.2
+# BLASTP 2.14.0+
+# Query: 1WWA_X
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1WWA_X	XP_046430790.1	32.222	90	47	2	19	103	2859	2939	0.002	47.8
+# BLASTP 2.14.0+
+# Query: 3GBQ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3GBQ_A	NLE22475.1	37.931	58	34	2	1	56	135	192	0.21	40.0
+# BLASTP 2.14.0+
+# Query: 3TYX_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3TYX_B	WP_016428665.1	28.882	322	229	0	5	326	6	327	2.53e-45	168
+# BLASTP 2.14.0+
+# Query: 3EGU_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3EGU_A	XP_048470903.1	54.545	33	14	1	7	38	167	199	0.50	38.9
+# BLASTP 2.14.0+
+# Query: 2E21_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2E21_A	WP_008287488.1	22.549	306	227	3	6	306	6	306	4.50e-13	80.9
+# BLASTP 2.14.0+
+# Query: 4E5S_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4E5S_A	PCI27387.1	27.812	320	224	6	3	317	3	320	2.98e-37	146
+# BLASTP 2.14.0+
+# Query: 5NP2_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5NP2_A	KAI8999303.1	34.694	49	32	0	2	50	281	329	0.18	40.0
+# BLASTP 2.14.0+
+# Query: 2C52_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2C52_A	MCA3275481.1	40.909	44	26	0	7	50	11	54	2.3	36.6
+# BLASTP 2.14.0+
+# Query: 1P4I_L
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1P4I_L	QJI08032.1	38.095	105	62	1	6	110	6	107	1.72e-13	72.0
+# BLASTP 2.14.0+
+# Query: 1KBH_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1KBH_B	MBT4803910.1	43.750	32	17	1	8	39	141	171	5.5	36.2
+# BLASTP 2.14.0+
+# Query: 4J9I_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4J9I_A	KFP69411.1	40.741	54	27	2	4	54	372	423	0.60	38.5
+# BLASTP 2.14.0+
+# Query: 2ZJS_Y
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2ZJS_Y	WP_038061204.1	20.197	406	311	3	12	407	12	414	2.09e-30	133
+# BLASTP 2.14.0+
+# Query: 2CI2_I
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2CI2_I	KAA0049292.1	27.692	65	47	0	1	65	5	69	0.24	38.1
+# BLASTP 2.14.0+
+# Query: 3N29_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3N29_A	MCD7741811.1	25.444	338	227	3	2	325	4	330	3.26e-34	141
+# BLASTP 2.14.0+
+# Query: 4J9C_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4J9C_A	XP_048457125.1	44.643	56	29	2	2	55	3	58	0.19	40.0
+# BLASTP 2.14.0+
+# Query: 4KI5_M
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4KI5_M	XP_026548873.1	27.517	149	108	0	4	152	4	152	1.22e-20	93.6
+# BLASTP 2.14.0+
+# Query: 5EUL_Y
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5EUL_Y	MCI5774607.1	20.823	413	264	13	15	380	27	423	8.84e-16	90.9
+# BLASTP 2.14.0+
+# Query: 5IEB_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5IEB_A	WP_243996883.1	23.077	91	70	0	19	109	25	115	0.080	42.4
+# BLASTP 2.14.0+
+# Query: 5FD8_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5FD8_B	WP_271226507.1	27.692	325	228	6	4	323	3	325	3.34e-42	159
+# BLASTP 2.14.0+
+# Query: 2JW4_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2JW4_A	CAG9771215.1	38.889	54	33	0	6	59	281	334	0.86	38.9
+# BLASTP 2.14.0+
+# Query: 3SR3_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3SR3_B	WP_016428665.1	29.607	331	206	3	1	304	3	333	9.79e-47	171
+# BLASTP 2.14.0+
+# Query: 6FGS_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6FGS_A	MBH22191.1	27.907	86	47	2	8	84	4	83	6.1	38.1
+# BLASTP 2.14.0+
+# Query: 1Q18_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1Q18_A	WP_068718339.1	24.214	318	236	5	2	314	4	321	3.09e-27	119
+# BLASTP 2.14.0+
+# Query: 1HIA_I
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1HIA_I	XP_011445615.2	40.541	37	22	0	1	37	3891	3927	2.5	36.6
+# BLASTP 2.14.0+
+# Query: 3U1B_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3U1B_A	WP_239416342.1	31.173	324	223	0	9	332	6	329	2.53e-57	199
+# BLASTP 2.14.0+
+# Query: 1Q18_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1Q18_B	MBQ5525243.1	22.571	319	241	5	1	314	1	318	1.78e-24	112
+# BLASTP 2.14.0+
+# Query: 5NP3_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5NP3_A	KAG4087826.1	30.189	53	37	0	1	53	534	586	0.81	38.5
+# BLASTP 2.14.0+
+# Query: 2KKJ_A
+# Database: blastdb/nr
+# 0 hits found
+# BLASTP 2.14.0+
+# Query: 2L14_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2L14_A	MCK9639285.1	39.024	41	25	0	16	56	199	239	2.3	37.4
+# BLASTP 2.14.0+
+# Query: 1JRH_I
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1JRH_I	XP_035249646.1	25.000	88	65	1	1	87	25	112	1.1	39.7
+# BLASTP 2.14.0+
+# Query: 4J9D_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4J9D_A	5NP5_A	32.727	55	37	0	2	56	7	61	0.007	41.6
+# BLASTP 2.14.0+
+# Query: 3GJZ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3GJZ_A	WP_239416342.1	24.224	322	237	4	7	321	6	327	8.74e-34	137
+# BLASTP 2.14.0+
+# Query: 1SZ2_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1SZ2_B	MCB1920743.1	29.183	257	175	6	57	307	63	318	8.56e-25	113
+# BLASTP 2.14.0+
+# Query: 4GBQ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4GBQ_A	WP_222521017.1	36.207	58	33	2	3	56	4	61	0.092	40.0
+# BLASTP 2.14.0+
+# Query: 4J9G_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4J9G_A	5NP3_A	28.302	53	38	0	6	58	9	61	0.68	36.6
+# BLASTP 2.14.0+
+# Query: 1WWW_Y
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1WWW_Y	XP_055350850.1	32.000	100	67	1	2	101	308	406	2.87e-07	58.9
+# BLASTP 2.14.0+
+# Query: 4MJX_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4MJX_B	WP_239416342.1	29.321	324	229	0	9	332	6	329	3.82e-53	188
+# BLASTP 2.14.0+
+# Query: 5CH4_G
+# Database: blastdb/nr
+# 0 hits found
+# BLASTP 2.14.0+
+# Query: 4E5S_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4E5S_B	WP_091838923.1	26.687	326	232	5	2	322	3	326	3.25e-37	146
+# BLASTP 2.14.0+
+# Query: 5NP5_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5NP5_A	CDH58528.1	46.512	43	21	1	12	52	518	560	4.1	36.6
+# BLASTP 2.14.0+
+# Query: 2E89_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2E89_A	MCS7230154.1	22.840	324	230	5	2	307	13	334	2.84e-14	85.5
+# BLASTP 2.14.0+
+# Query: 4H1H_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4H1H_A	WP_277847310.1	27.134	328	205	10	4	308	2	318	1.26e-28	123
+# BLASTP 2.14.0+
+# Query: 1S4G_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1S4G_A	WP_167595700.1	50.000	28	14	0	3	30	262	289	2.8	36.6
+# BLASTP 2.14.0+
+# Query: 4MI1_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4MI1_B	WP_191709074.1	33.544	316	203	5	12	320	6	321	3.40e-44	165
+# BLASTP 2.14.0+
+# Query: 4J9B_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4J9B_A	KAJ2418196.1	35.088	57	36	1	3	58	28	84	0.044	40.4
+# BLASTP 2.14.0+
+# Query: 6PNW_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6PNW_B	AAY47073.1	36.066	61	39	0	1	61	22	82	0.001	44.3
+# BLASTP 2.14.0+
+# Query: 4MJX_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4MJX_A	WP_239416342.1	30.864	324	224	0	6	329	6	329	1.63e-55	194
+# BLASTP 2.14.0+
+# Query: 1WY5_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1WY5_A	MCJ7580211.1	24.221	289	205	6	7	286	2	285	9.77e-16	89.7
+# BLASTP 2.14.0+
+# Query: 3EG1_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3EG1_A	KAI8811057.1	36.000	50	32	0	4	53	464	513	0.18	40.4
+# BLASTP 2.14.0+
+# Query: 1P4B_L
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1P4B_L	BBI15442.1	29.524	105	74	0	5	109	23	127	1.29e-12	70.5
+# BLASTP 2.14.0+
+# Query: 2EC9_T
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2EC9_T	WP_157779143.1	30.435	69	39	2	5	71	50	111	3.6	36.6
+# BLASTP 2.14.0+
+# Query: 2SNI_I
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2SNI_I	WP_278116302.1	33.871	62	39	1	1	62	5	64	2.3	37.0
+# BLASTP 2.14.0+
+# Query: 3TYX_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3TYX_A	WP_239416342.1	28.086	324	233	0	8	331	6	329	1.37e-50	182
+# BLASTP 2.14.0+
+# Query: 1KKM_H
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1KKM_H	WP_005434102.1	40.506	79	46	1	2	79	3	81	1.06e-08	58.5
+# BLASTP 2.14.0+
+# Query: 4J9H_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4J9H_A	KAG8140406.1	36.842	57	35	1	4	59	34	90	0.040	40.4
+# BLASTP 2.14.0+
+# Query: 6H8C_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+6H8C_A	MAC91816.1	35.938	64	39	2	52	115	71	132	3.5	38.9
+# BLASTP 2.14.0+
+# Query: 2E21_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2E21_B	MCD6107106.1	23.986	296	208	9	11	297	10	297	4.56e-13	82.0
+# BLASTP 2.14.0+
+# Query: 3SR3_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3SR3_A	WP_251517746.1	31.045	335	213	2	6	331	4	329	1.66e-52	186
+# BLASTP 2.14.0+
+# Query: 4JVO_B
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4JVO_B	WP_016428665.1	30.793	328	227	0	1	328	2	329	1.27e-53	189
+# BLASTP 2.14.0+
+# Query: 5AWW_Y
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5AWW_Y	2ZJS_Y	22.449	392	298	2	31	419	31	419	4.63e-41	162
+# BLASTP 2.14.0+
+# Query: 5OAZ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+5OAZ_A	5NP3_A	27.586	58	42	0	1	58	3	60	0.049	39.7
+# BLASTP 2.14.0+
+# Query: 5LV6_A
+# Database: blastdb/nr
+# 0 hits found
+# BLASTP 2.14.0+
+# Query: 6GQ9_A
+# Database: blastdb/nr
+# 0 hits found
+# BLASTP 2.14.0+
+# Query: 3E18_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+3E18_A	WP_251413083.1	25.439	342	255	0	5	346	7	348	4.63e-36	145
+# BLASTP 2.14.0+
+# Query: 2CR3_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2CR3_A	PAV62581.1	36.620	71	40	1	23	88	801	871	0.15	42.4
+# BLASTP 2.14.0+
+# Query: 4INJ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+4INJ_A	GIV98114.1	30.164	305	213	0	5	309	3	307	4.39e-52	185
+# BLASTP 2.14.0+
+# Query: 1GBQ_A
+# Database: blastdb/nr
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+1GBQ_A	KAJ3286768.1	43.750	48	27	0	3	50	462	509	0.36	39.3
+# BLAST processed 142 queries
