@@ -1,6 +1,16 @@
-![pesto summary](img/carbonara_summary.png)
+![carbonara summary](img/carbonara_summary.png)
 
 # CARBonAra: Context-aware geometric deep learning for protein sequence design
+
+
+### Installing Anaconda environment
+
+All the specific dependencies are listed in [carbonara.yml](carbonara.yml). The specific dependencies can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environement with:
+
+```
+conda env create -f carbonara.yml
+conda activate carbonara
+```
 
 
 ## License
