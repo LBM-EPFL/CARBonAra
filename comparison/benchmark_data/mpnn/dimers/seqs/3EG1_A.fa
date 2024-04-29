@@ -1,4 +1,0 @@
->3EG1, score=1.1047, global_score=1.3118, fixed_chains=['B'], designed_chains=['A'], model_name=v_48_020, git_hash=e61ecb7e3c32e630ff7a34d16c3a43fcf8f8a8bd, seed=37
-NLFVALYDFVASGDNTLSITKGEKLRVLGYNHNGEWCEAQTKNGQGWVPSQYITPVNS
->T=1e-06, sample=1, score=0.6750, global_score=1.0829, seq_recovery=0.7241
-NLYVALKDYTANGNNTLSIKKGEKLTVLGYNSDGSWAEAQTKDGQGWVPSSYIKPANS

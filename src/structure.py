@@ -1,6 +1,6 @@
 import numpy as np
 
-from src.data_encoding import std_aminoacids, std_backbone
+from src.data_encoding import std_aminoacids, std_backbone, std_resnames
 
 
 # resname convergion (37)
@@ -13,7 +13,7 @@ res3to1 = {
 res1to3 = {v:k for k,v in res3to1.items()}
 
 
-def clean_structure(structure, rm_wat=True):
+def clean_structure(structure, rm_hetatm=False, rm_wat=True):
     # mask for water, hydrogens and deuterium
     m_wat = (structure["resname"] == "HOH")
     m_h = (structure["element"] == "H")
@@ -27,6 +27,10 @@ def clean_structure(structure, rm_wat=True):
         # keep but tag water
         mask = ((~m_h) & (~m_d) & (~m_hwat))
         structure["resid"][m_wat] = -999
+
+    if rm_hetatm:
+        # remove hetatm
+        mask &= (structure['het_flag'] == 'A')
 
     # filter structure atoms
     structure = {key:structure[key][mask] for key in structure}
@@ -183,17 +187,12 @@ def filter_non_atomic_subunits(subunits):
     return subunits
 
 
-def data_to_structure(X, q, M, std_elements, std_resnames, std_names):
-    # q: [qe, qr, qn]
+def data_to_structure(X, q, Mr, Mc, std_elements, std_resnames, std_names):
+    # q = [qe, qr, qn]
     # resnames
     resnames_enum = np.concatenate([std_resnames, [b'UNX']])
     q_resnames = q[:,len(std_elements)+1:len(std_elements)+len(std_resnames)+2]
     resnames = resnames_enum[np.where(q_resnames)[1]]
-
-    # resids
-    ids0, ids1 = np.where(M > 0.5)
-    resids = np.zeros(M.shape[0], dtype=np.int64)
-    resids[ids0] = ids1+1
 
     # names
     q_names = q[:,len(std_elements)+len(std_resnames)+2:]
@@ -205,6 +204,19 @@ def data_to_structure(X, q, M, std_elements, std_resnames, std_names):
     elements_enum = np.concatenate([std_elements, [b'X']])
     elements = elements_enum[np.where(q_elements)[1]]
 
+    # resids
+    ids0, ids1 = np.where(Mr > 0.5)
+    resids = np.zeros(Mr.shape[0], dtype=np.int64)
+    resids[ids0] = ids1+1
+
+    # chains
+    ids0, ids1 = np.where(Mc > 0.5)
+    cids = np.zeros(Mc.shape[0], dtype=np.int64)
+    cids[ids0] = ids1+1
+
+    # hetatm flag
+    het_flags = np.array(['H' if rn == 'UNX' else 'A' for rn in resnames])
+
     # pack subunit struct
     return {
         'xyz': X,
@@ -212,6 +224,8 @@ def data_to_structure(X, q, M, std_elements, std_resnames, std_names):
         'element': elements,
         'resname': resnames,
         'resid': resids,
+        'chain_name': cids.astype(str),
+        'het_flag': het_flags,
     }
 
 
@@ -253,3 +267,40 @@ def encode_bfactor(structure, p):
         print("WARNING: bfactor not saved")
 
     return structure
+
+
+def add_virtual_cb(structure):
+    # split structure by residue
+    residues = [atom_select(structure, structure['resid']==i) for i in np.unique(structure['resid'])]
+
+    # place virtual Cb using ideal angle and bond length (ref: ProteinMPNN)
+    for res in residues:
+        if (res['resname'][0] in std_resnames[:20]) and ('CA' in res['name']) and ('N' in res['name']) and ('C' in res['name']):
+            # define vectors
+            b = res['xyz'][res['name']=='CA'] - res['xyz'][res['name']=='N']
+            c = res['xyz'][res['name']=='C'] - res['xyz'][res['name']=='CA']
+            a = np.cross(b,c)
+
+            if 'CB' in res['name']:
+                # update Cb coordinates
+                res['xyz'][res['name']=='CB'] = -0.58273431*a + 0.56802827*b - 0.54067466*c + res['xyz'][res['name']=='CA']
+            else:
+                # insert virtual Cb (GLY)
+                virt_Cb = {
+                    'name': 'CB',
+                    'bfactor': 0.0,
+                    'element': 'C',
+                    'resname': 'GLY',
+                    'xyz': (-0.58273431*a + 0.56802827*b - 0.54067466*c + res['xyz'][res['name']=='CA'])[0],
+                    'het_flag': 'A',
+                }
+                for key in res:
+                    if key not in virt_Cb:
+                        virt_Cb[key] = res[key][-1]
+
+                # insert residue
+                for key in res:
+                    res[key] = np.concatenate([res[key], [virt_Cb[key]]])
+
+    # pack residues back
+    return {key: np.concatenate([res[key] for res in residues]) for key in residues[0]}

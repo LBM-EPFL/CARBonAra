@@ -1,0 +1,11 @@
+include LICENSE
+include requirements.txt
+
+exclude *.ipynb
+
+prune data
+prune examples
+prune md_analysis
+prune model_analysis
+prune model_comparison
+prune results

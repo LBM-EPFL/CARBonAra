@@ -1,4 +1,4 @@
-![carbonara summary](img/carbonara_summary.png)
+![carbonara summary](.img/carbonara_summary.png)
 
 # CARBonAra: Context-aware geometric deep learning for protein sequence design
 
@@ -12,6 +12,16 @@ conda env create -f carbonara.yml
 conda activate carbonara
 ```
 
+### Installing [ESM-IF1](https://github.com/facebookresearch/esm/tree/main/examples/inverse_folding) (optional)
+```
+conda create -n inverse python=3.9
+conda activate inverse
+conda install pytorch cudatoolkit=11.3 -c pytorch
+conda install pyg -c pyg -c conda-forge
+conda install pip
+pip install ipykernel biotite
+pip install git+https://github.com/facebookresearch/esm.git
+```
 
 ## License
 
@@ -25,3 +35,5 @@ This work is licensed under a
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
 ## Reference
+
+
