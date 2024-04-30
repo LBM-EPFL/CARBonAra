@@ -1,6 +1,6 @@
 import numpy as np
 
-from src.data_encoding import std_aminoacids, std_backbone, std_resnames
+from .data_encoding import std_aminoacids, std_backbone, std_resnames
 
 
 # resname convergion (37)
