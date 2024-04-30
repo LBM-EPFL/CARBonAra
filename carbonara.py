@@ -1,6 +1,5 @@
 import os
 import sys
-import h5py
 import argparse
 import importlib
 import numpy as np
@@ -43,41 +42,6 @@ def average_maximum_confidence(p: pt.Tensor):
 
 def max_pred_to_seq(p: pt.Tensor):
     return ''.join([res3to1[r] for r in std_resnames[:20][pt.argmax(p,dim=1).cpu().numpy()]])
-
-
-def minimize_sequence_similarity(p, y):
-    # sequence similarity criteria
-    blm = bl.BLOSUM(62)
-    seq_minsim = ""
-    seq_ref = ""
-    seq_score = []
-    for i in range(p.shape[0]):
-        # extract sequence from prediction and reference
-        rs0 = res3to1[std_resnames[:20][pt.argmax(y[i]).cpu().numpy().item()]]
-        ids_pr = pt.where(p[i] >= 0.5)[0]
-        rsp_l = [res3to1[r] for r in std_resnames[:20][ids_pr.cpu().numpy()]]
-
-        # compute sequence similarity and find minimum locations
-        ss = np.array([blm[rs0][r] for r in rsp_l])
-        ids_min = np.where(ss <= 0.0)[0]
-        if len(ids_min) == 0:
-            ids_min = np.where(ss == np.min(ss))[0]
-
-        # find sequence with minimum sequence similarity and maximum probability
-        k = pt.argmax(p[i][ids_pr][ids_min]).cpu().numpy().item()
-        rs_ms = res3to1[std_resnames[:20][ids_pr[ids_min][k].cpu().item()]]
-
-        # store results
-        seq_minsim += rs_ms
-        seq_ref += rs0
-        seq_score.append(np.min(ss))
-
-    return seq_minsim, seq_ref, np.array(seq_score)
-
-
-def kstar(c: pt.Tensor):
-    S = -pt.sum(c * pt.log2(c + 1e-6), dim=1)
-    return pt.pow(pt.tensor(2.0), S)
 
 
 def seq_to_features(seq):
@@ -137,40 +101,11 @@ def load_structure(pdb_filepath, rm_hetatm=False, rm_wat=True):
     return structure
 
 
-def split_by_residue(structure):
-    uresids, ids = np.unique(structure['resid'], return_index=True)
-    uresids = uresids[np.argsort(ids)]
-
-    residues = [atom_select(structure, structure['resid'] == resid) for resid in uresids]
-
-    return residues
-
-
-def cid_to_chain_name(structure):
-    structure['chain_name'] = np.array(["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"[i] for i in structure['cid']])
-    return structure
-
-
 def chain_masks(structure):
     _, Mr, Mc = encode_structure(chain_name_to_index(structure))
     chain_names = [structure['chain_name'][i].split(':')[0] for i in pt.max(Mc, dim=0)[1]]
     mr_chains = (pt.matmul(Mr.T, Mc) / pt.sum(Mr, dim=0).unsqueeze(1) > 0.0)
     return mr_chains, chain_names
-
-
-def subunit_type(subunit):
-    if np.all([rn in resname_to_categ for rn in subunit['resname']]):
-        t = np.unique([resname_to_categ[rn] for rn in subunit['resname'] if rn in resname_to_categ])
-        if len(t) == 1:
-            return t.item()
-        else:
-            return "na"
-    else:
-        return "na"
-
-
-def subunits_type(subunits):
-    return {(subunit_type(subunits[cid]),cid) for cid in subunits}
 
 
 def load_module(name, path):
