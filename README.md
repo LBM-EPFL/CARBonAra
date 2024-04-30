@@ -2,7 +2,7 @@
 
 # CARBonAra: Context-aware geometric deep learning for protein sequence design
 
-## Installation
+## Installation
 
 The python package and command line tool can be installed using `pip` based on the requirements file: [requirements.txt](requirements.txt). The dependencies are linked with python version 3.9 and can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environment with:
 ```
