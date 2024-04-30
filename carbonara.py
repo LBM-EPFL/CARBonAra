@@ -10,9 +10,14 @@ from functools import partial
 from scipy import signal
 from tqdm import tqdm
 
-from .src.structure_io import read_pdb, save_pdb
-from .src.structure import concatenate_chains, encode_bfactor, res3to1, res1to3, clean_structure, split_by_chain, tag_hetatm_chains, chain_name_to_index, atom_select, add_virtual_cb, data_to_structure
-from .src.data_encoding import std_elements, std_resnames, std_names, std_aminoacids, std_backbone, onehot, resname_to_categ, encode_structure, encode_features, extract_topology
+try:
+    from .src.structure_io import read_pdb, save_pdb
+    from .src.structure import concatenate_chains, encode_bfactor, res3to1, res1to3, clean_structure, split_by_chain, tag_hetatm_chains, chain_name_to_index, atom_select, add_virtual_cb, data_to_structure
+    from .src.data_encoding import std_elements, std_resnames, std_names, std_aminoacids, std_backbone, onehot, resname_to_categ, encode_structure, encode_features, extract_topology
+except ImportError:
+    from src.structure_io import read_pdb, save_pdb
+    from src.structure import concatenate_chains, encode_bfactor, res3to1, res1to3, clean_structure, split_by_chain, tag_hetatm_chains, chain_name_to_index, atom_select, add_virtual_cb, data_to_structure
+    from src.data_encoding import std_elements, std_resnames, std_names, std_aminoacids, std_backbone, onehot, resname_to_categ, encode_structure, encode_features, extract_topology
 
 
 def aa_only(p: pt.Tensor, y: pt.Tensor):
