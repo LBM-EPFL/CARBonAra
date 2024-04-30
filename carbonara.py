@@ -371,7 +371,8 @@ def main():
     b_sampled = (args.sampling_method == 'sampled')
 
     # load model
-    carbonara = CARBonAra("model/save/s_v6_4_2022-09-16_11-51", device_name=args.device)
+    model_path = os.path.join(os.path.dirname(__file__), "model", "save", "s_v6_4_2022-09-16_11-51")
+    carbonara = CARBonAra(model_path, device_name=args.device)
 
     # sample sequences
     structure_scaffold, pssm, predictions = imprint_sampling(

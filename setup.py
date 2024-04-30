@@ -12,14 +12,8 @@ setup(
     url = "https://github.com/lfkrapp/CARBonAra",
     version = "1.0.0",
     license = "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License",
+    py_modules=['carbonara'],
     include_package_data = True,
-    package_data = {
-        "": ["*.py", "src/*.py", "requirements.txt", "LICENSE"],
-        "model/save/s_v6_4_2022-09-16_11-51": ["*.py", "src/*.py"],
-    },
-    exclude_package_data = {
-        "": ["*.ipynb", "data", "examples", "md_analysis", "model_analysis", "model_comparison", "results"],
-    },
     packages=find_packages(where="."),
     entry_points = {
         "console_scripts": [
