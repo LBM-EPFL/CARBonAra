@@ -2,15 +2,24 @@
 
 # CARBonAra: Context-aware geometric deep learning for protein sequence design
 
+## Installation
+
+The python package and command line tool can be installed using `pip` based on the requirements file: [requirements.txt](requirements.txt). The dependencies are linked with python version 3.9 and can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environment with:
+```
+conda create -n carbonara python=3.9
+conda activate carbonara
+python setup.py install
+```
 
 ### Installing Anaconda environment
 
-All the specific dependencies are listed in [carbonara.yml](carbonara.yml). The specific dependencies can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environement with:
-
+All the specific dependencies are listed in [carbonara.yml](carbonara.yml). The specific dependencies can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environment with:
 ```
 conda env create -f carbonara.yml
 conda activate carbonara
 ```
+
+
 
 ### Installing [ESM-IF1](https://github.com/facebookresearch/esm/tree/main/examples/inverse_folding) (optional)
 ```
