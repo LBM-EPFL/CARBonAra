@@ -1,4 +1,5 @@
 model_comparison/ProteinMPNN
+model/save/s_v6_4_2022-09-16_11-51/model_cs.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

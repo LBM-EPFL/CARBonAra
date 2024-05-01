@@ -11,12 +11,12 @@ from tqdm import tqdm
 
 try:
     from .src.structure_io import read_pdb, save_pdb
-    from .src.structure import concatenate_chains, encode_bfactor, res3to1, res1to3, clean_structure, split_by_chain, tag_hetatm_chains, chain_name_to_index, atom_select, add_virtual_cb, data_to_structure
-    from .src.data_encoding import std_elements, std_resnames, std_names, std_aminoacids, std_backbone, onehot, resname_to_categ, encode_structure, encode_features, extract_topology
+    from .src.structure import encode_bfactor, res3to1, res1to3, clean_structure, split_by_chain, tag_hetatm_chains, chain_name_to_index, atom_select, add_virtual_cb, data_to_structure
+    from .src.data_encoding import std_elements, std_resnames, std_names, std_aminoacids, std_backbone, onehot, encode_structure, encode_features, extract_topology
 except ImportError:
     from src.structure_io import read_pdb, save_pdb
-    from src.structure import concatenate_chains, encode_bfactor, res3to1, res1to3, clean_structure, split_by_chain, tag_hetatm_chains, chain_name_to_index, atom_select, add_virtual_cb, data_to_structure
-    from src.data_encoding import std_elements, std_resnames, std_names, std_aminoacids, std_backbone, onehot, resname_to_categ, encode_structure, encode_features, extract_topology
+    from src.structure import encode_bfactor, res3to1, res1to3, clean_structure, split_by_chain, tag_hetatm_chains, chain_name_to_index, atom_select, add_virtual_cb, data_to_structure
+    from src.data_encoding import std_elements, std_resnames, std_names, std_aminoacids, std_backbone, onehot, encode_structure, encode_features, extract_topology
 
 
 def aa_only(p: pt.Tensor, y: pt.Tensor):
@@ -271,6 +271,7 @@ def imprint_sampling(
 
         # split sequence by chain
         seqs = [''.join(np.array(list(seq))[mr_chains[mr_aa,i]]) for i in range(mr_chains.shape[1])]
+        seqs = list(filter(lambda seq: len(seq) > 0, seqs))
 
         # store results
         predictions.append((seqs, score))

@@ -262,12 +262,12 @@ class Model(pt.nn.Module):
         # find max number of nearest neighbors
         self.max_nn = max([l['nn'] for l in config['sum']])
 
-    def forward(self, X, ids_topk, q0, M):
+    def forward(self, X, ids_topk, q0, M, sigma=1.0):
         # encode features
         q = self.em.forward(q0)
 
         # initial state vectors
-        p0 = pt.randn((q.shape[0]+1, X.shape[1], q.shape[1]), device=X.device)
+        p0 = sigma * pt.randn((q.shape[0]+1, X.shape[1], q.shape[1]), device=X.device)
 
         # unpack state features with sink
         q, ids_topk, D_nn, R_nn = unpack_state_features(X, ids_topk, q, self.max_nn)
