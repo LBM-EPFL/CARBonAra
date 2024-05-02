@@ -2,25 +2,49 @@
 
 # CARBonAra: Context-aware geometric deep learning for protein sequence design
 
+## Overview
+
+CARBonAra is a deep learning framework that facilitates protein sequence design by leveraging atomic coordinates, allowing for context-aware sequence generation. This method is particularly useful for integrating protein design with molecular environments, including non-protein entities, providing more control to protein engineering.
+
+## Features
+* **Geometric Transformer**: The framework uses a geometric transformer model based only on atomic coordinates and atomic elements, allowing it to handle any protein backbone scaffolds and various molecular environments.
+* **Context Awareness**: CARBonAra's design accounts for molecular environments, including non-protein entities, providing context-aware sequence generation.
+* **Imprint Sequence Sampling**: CARBonAra's imprint sampling method provides diverse sequences, balancing design flexibility with high-confidence predictions.
+
 ## Install
 
-The python package and command line tool can be installed using `pip` based on the requirements file: [requirements.txt](requirements.txt). The dependencies are linked with python version 3.9 and can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environment with:
+CARBonAra can be easily installed using `pip` and `conda`:
 
+1. Clone the repository:
+```shell
+git clone https://github.com/LBM-EPFL/CARBonAra
+cd CARBonAra
+```
+
+2. Create and activate a new conda environment:
 ```shell
 conda create -n carbonara
 conda activate carbonara
+```
+
+3. Install the package and dependencies:
+```shell
 pip install .
 ```
 
-## How to use
+## Usage
 
 ### Command line tool
+
+To generate sequences using a specific protein structure:
 
 ```shell
 carbonara --num_sequences 100 --imprint_ratio 0.5 examples/pdbs/2oob.pdb outputs
 ```
 
 ### Python package
+
+To use CARBonAra directly in a Python script:
 
 ```python
 from carbonara import CARBonAra, imprint_sampling
@@ -37,20 +61,24 @@ sequences, scores, pssm, structure_scaffold = imprint_sampling(
 )
 ```
 
-See [carbonara_quickstart.ipynb](carbonara_quickstart.ipynb) for more details and how to use the package.
+For more detailed examples and use cases, see [carbonara_quickstart.ipynb](carbonara_quickstart.ipynb).
 
 
 ## Reproducibility
 
-### Installing Anaconda environment
+### Anaconda environment
 
-All the specific dependencies are listed in [carbonara.yml](carbonara.yml). The specific dependencies can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environment with:
+To replicate the specific environment used for development, create and activate it using:
+
 ```
 conda env create -f carbonara.yml
 conda activate carbonara
 ```
 
-### Installing [ESM-IF1](https://github.com/facebookresearch/esm/tree/main/examples/inverse_folding) (optional)
+### ESM-IF1 integration
+
+For additional benchmarking with [ESM-IF1](https://github.com/facebookresearch/esm/tree/main/examples/inverse_folding), install it as follow:
+
 ```
 conda create -n inverse python=3.9
 conda activate inverse
