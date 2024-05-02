@@ -136,7 +136,10 @@ class ConfidenceMap():
 
 
 class CARBonAra():
-    def __init__(self, save_path, parameters_filename="model.pt", device_name="cpu"):
+    def __init__(self, model_name="s_v6_4_2022-09-16_11-51", parameters_filename="model.pt", device_name="cpu"):
+        # locate model save path
+        save_path = os.path.join(os.path.dirname(__file__), "model", "save", model_name)
+
         # load module
         self.config_module = load_module(os.path.basename(save_path), os.path.join(save_path, "config.py"))
         self.model_module = load_module(os.path.basename(save_path), os.path.join(save_path, "model.py"))
@@ -199,9 +202,9 @@ class CARBonAra():
 
 
 def imprint_sampling(
-        carbonara, pdb_filepath, num_sample, imprint_ratio,
+        carbonara, pdb_filepath, num_sample, imprint_ratio, b_sampled=True,
         known_chains=[], known_positions=[], unknown_positions=[], ignored_amino_acids=[],
-        b_sampled=True, ignore_hetatm=False, ignore_wat=False,
+        ignore_hetatm=False, ignore_wat=False,
     ):
     # load structure
     structure = load_structure(pdb_filepath, rm_hetatm=ignore_hetatm, rm_wat=ignore_wat)
@@ -241,7 +244,7 @@ def imprint_sampling(
     c0 = carbonara.conf(p0.numpy())
     
     # start sampling
-    predictions = []
+    sequences, scores = [], []
     for _ in tqdm(range(num_sample)):
         # sample sequence from confidence
         if b_sampled:
@@ -274,9 +277,10 @@ def imprint_sampling(
         seqs = list(filter(lambda seq: len(seq) > 0, seqs))
 
         # store results
-        predictions.append((seqs, score))
+        sequences.append(seqs)
+        scores.append(score)
 
-    return structure_scaffold, p0.numpy(), predictions 
+    return sequences, np.array(scores), p0.numpy(), structure_scaffold
 
 
 def parse_list_args(arg_str, sep=',', dtype=str):
@@ -296,7 +300,7 @@ def main():
     # parameters
     parser.add_argument("--num_sequences", type=int, default=1, help="number of sequences to generate")
     parser.add_argument("--imprint_ratio", type=float, default=0.5, help="ratio of sequence imprint for sampling")
-    parser.add_argument("--sampling_method", type=str, choices=["max", "sampled"], default="max", help="method to sample sequences")
+    parser.add_argument("--sampling_method", type=str, choices=["max", "sampled"], default="sampled", help="method to sample sequences")
     parser.add_argument("--known_chains", type=parse_list_args, default=[], help="comma-separated list of known chains")
     parser.add_argument("--known_positions", type=partial(parse_list_args, dtype=int), default=[], help="comma-separated list of known sequence position as indices")
     parser.add_argument("--unknown_positions", type=partial(parse_list_args, dtype=int), default=[], help="comma-separated list of unknown sequence position to design as indices")
@@ -312,15 +316,14 @@ def main():
     b_sampled = (args.sampling_method == 'sampled')
 
     # load model
-    model_path = os.path.join(os.path.dirname(__file__), "model", "save", "s_v6_4_2022-09-16_11-51")
-    carbonara = CARBonAra(model_path, device_name=args.device)
+    carbonara = CARBonAra(device_name=args.device)
 
     # sample sequences
-    structure_scaffold, pssm, predictions = imprint_sampling(
-        carbonara, args.pdb_filepath, args.num_sequences, args.imprint_ratio,
+    sequences, scores, pssm, structure_scaffold = imprint_sampling(
+        carbonara, args.pdb_filepath, args.num_sequences, args.imprint_ratio, b_sampled=b_sampled,
         known_chains=args.known_chains, known_positions=args.known_positions, unknown_positions=args.unknown_positions,
         ignored_amino_acids=args.ignored_amino_acids,
-        b_sampled=b_sampled, ignore_hetatm=args.ignore_hetatm, ignore_wat=args.ignore_water,
+        ignore_hetatm=args.ignore_hetatm, ignore_wat=args.ignore_water,
     )
 
     # save input scaffold
@@ -332,13 +335,14 @@ def main():
     np.savetxt(os.path.join(args.output_dir, f"{name}_pssm.csv"), pssm, header=','.join(std_aminoacids), delimiter=",", comments='')
 
     # save all sequences
-    for k in range(len(predictions)):
+    for k in range(len(sequences)):
         # extract results
-        seqs, score = predictions[k]
+        seqs = sequences[k]
+        score = scores[k]
 
         # write sequence to file
         info_str = f"imprint_ratio={args.imprint_ratio}, sampling_method={args.sampling_method}, score={score:.5f}"
-        n = len(str(len(predictions)-1))
+        n = len(str(len(sequences)-1))
         write_fasta(os.path.join(args.output_dir, f"{name}_{k:0{n}d}.fasta"), ':'.join(seqs), info=info_str)
 
 

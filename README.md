@@ -5,19 +5,39 @@
 ## Install
 
 The python package and command line tool can be installed using `pip` based on the requirements file: [requirements.txt](requirements.txt). The dependencies are linked with python version 3.9 and can be easily installed using [Anaconda](https://www.anaconda.com/). Create and activate the environment with:
-```
+
+```shell
 conda create -n carbonara
 conda activate carbonara
 pip install .
 ```
 
-
 ## How to use
 
 ### Command line tool
 
+```shell
+carbonara --num_sequences 100 --imprint_ratio 0.5 examples/pdbs/2oob.pdb outputs
+```
 
 ### Python package
+
+```python
+from carbonara import CARBonAra, imprint_sampling
+
+# load model
+carbonara = CARBonAra(device_name="cuda")
+
+# sample sequences
+sequences, scores, pssm, structure_scaffold = imprint_sampling(
+    carbonara=carbonara, 
+    pdb_filepath="examples/pdbs/1zns.pdb",  # input structure
+    num_sample=100,  # number of sequences to sample
+    imprint_ratio=0.5,  # control sampling diversity with prior
+)
+```
+
+See [carbonara_quickstart.ipynb](carbonara_quickstart.ipynb) for more details and how to use the package.
 
 
 ## Reproducibility
