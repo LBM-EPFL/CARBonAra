@@ -62,10 +62,23 @@ sequences, scores, pssm, structure_scaffold = imprint_sampling(
 )
 ```
 
-For more detailed examples and use cases, see [carbonara_quickstart.ipynb](carbonara_quickstart.ipynb).
+For more detailed examples and use cases, see [quickstart.ipynb](quickstart.ipynb).
 
 
 ## Reproducibility
+
+### Repository structure
+* [model](model): Code for the training of the model and the trained model.
+* [src](src): Functions used throughout the repository.
+* [examples](examples): A few examples of inputs and outputs to get started.
+* [results](results): Code to reproduce the results presented in the article.
+
+#### Results
+* [model_analysis](results/model_analysis): Analysis and benchmarking of the model, such as the context awareness.
+* [model_comparison](results/model_comparison): Comparison with ProteinMPNN and ESM-IF1.
+* [md_analysis](results/md_analysis): Analysis of the predictions of CARBonAra when applied to molecular dynamics simulations.
+* [cole7](results/cole7): Study case of Colicin E7 (PDB ID: 1ZNS).
+* [tem1](results/tem1): Study case of TEM-1 (PDB ID: 1BT5 / 1JTG).
 
 ### Anaconda environment
 
