@@ -307,7 +307,7 @@ def main():
     parser.add_argument("--ignored_amino_acids", type=parse_list_args, default=[], help="comma-separated list of one letter code of amino acids to ignore from the sequences sampling")
     parser.add_argument("--ignore_hetatm", action="store_true", help="ignore HETATM records in the input")
     parser.add_argument("--ignore_water", action="store_true", help="ignore water molecules in the input")
-    parser.add_argument("--device", type=str, choices=["cuda", "cpu"], default="cuda", help="method to sample sequences")
+    parser.add_argument("--device", type=str, choices=["cuda", "cpu"], default="cuda", help="device to choose for running the model: cpu or cuda")
 
     # parse arguments
     args = parser.parse_args()
