@@ -76,7 +76,6 @@ def main():
 
     # parameters
     N = len(dataset)
-
     # sample predictions
     for i in tqdm(np.random.choice(len(dataset), N, replace=False)):
         try:
@@ -112,7 +111,7 @@ def main():
                 continue
 
             # apply model on full structure
-            _, p, y = model(structure)
+            _, p, y, _ = model(structure)
 
             # prediction split by chain
             rcids = np.array([res['chain_name'][0] for res in sp.split_by_residue(structure)])
@@ -123,7 +122,7 @@ def main():
             pc, yc = {}, {}
             for cid in cids_prot:
                 m_known = (structure['chain_name'] != cid)
-                _, pi, yi = model(structure, m_known=m_known)
+                _, pi, yi, _ = model(structure, m_known=m_known)
                 pi = pi[rcids==cid]
                 yi = yi[rcids==cid]
                 pi, yi = rt.aa_only(pi, yi)
@@ -137,7 +136,7 @@ def main():
                 subunit = subunits[cid]
                 subunit['chain_name'] = np.array([cid]*subunit['xyz'].shape[0])
                 if len(np.unique(subunit['resid'])) >= model.module.config_data['min_num_res']:
-                    _, pi, yi = model(subunit)
+                    _, pi, yi, _ = model(subunit)
                     pi, yi = rt.aa_only(pi, yi)
                     ps[cid] = pi
                     ys[cid] = yi

@@ -1,5 +1,6 @@
 results/model_comparison/ProteinMPNN
 results/model_comparison/tmscore
+results/results/context_benchmark
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

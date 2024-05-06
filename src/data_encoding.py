@@ -132,3 +132,57 @@ def structure_to_data(structure, device=pt.device("cpu")):
     ids_topk, D_topk, R_topk, D, R = extract_topology(X, 64)
 
     return X, ids_topk, q, M
+
+
+def locate_contacts(xyz_i, xyz_j, r_thr, device=pt.device("cpu")):
+    with pt.no_grad():
+        # send data to device
+        if isinstance(xyz_i, pt.Tensor):
+            X_i = xyz_i.to(device)
+            X_j = xyz_j.to(device)
+        else:
+            X_i = pt.from_numpy(xyz_i).to(device)
+            X_j = pt.from_numpy(xyz_j).to(device)
+
+        # compute distance matrix between subunits
+        D = pt.norm(X_i.unsqueeze(1) - X_j.unsqueeze(0), dim=2)
+
+        # find contacts
+        ids_i, ids_j = pt.where(D < r_thr)
+
+        # get contacts distances
+        d_ij = D[ids_i, ids_j]
+
+    return ids_i.cpu(), ids_j.cpu(), d_ij.cpu()
+
+
+def extract_all_contacts(subunits, r_thr, device=pt.device("cpu")):
+    # get subunits names
+    snames = list(subunits)
+
+    # extract interfaces
+    contacts_dict = {}
+    for i in range(len(snames)):
+        # current selection chain
+        cid_i = snames[i]
+
+        for j in range(i+1, len(snames)):
+            # current selection chain
+            cid_j = snames[j]
+
+            # find contacts
+            ids_i, ids_j, d_ij = locate_contacts(subunits[cid_i]['xyz'], subunits[cid_j]['xyz'], r_thr, device=device)
+
+            # insert contacts
+            if (ids_i.shape[0] > 0) and (ids_j.shape[0] > 0):
+                if f'{cid_i}' in contacts_dict:
+                    contacts_dict[f'{cid_i}'].update({f'{cid_j}': {'ids': pt.stack([ids_i,ids_j], dim=1), 'd': d_ij}})
+                else:
+                    contacts_dict[f'{cid_i}'] = {f'{cid_j}': {'ids': pt.stack([ids_i,ids_j], dim=1), 'd': d_ij}}
+
+                if f'{cid_j}' in contacts_dict:
+                    contacts_dict[f'{cid_j}'].update({f'{cid_i}': {'ids': pt.stack([ids_j,ids_i], dim=1), 'd': d_ij}})
+                else:
+                    contacts_dict[f'{cid_j}'] = {f'{cid_i}': {'ids': pt.stack([ids_j,ids_i], dim=1), 'd': d_ij}}
+
+    return contacts_dict

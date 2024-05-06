@@ -226,8 +226,27 @@ def chain_masks(structure):
 
 
 def subunit_type(subunit):
-    if np.all([rn in sp.resname_to_categ for rn in subunit['resname']]):
-        t = np.unique([sp.resname_to_categ[rn] for rn in subunit['resname'] if rn in sp.resname_to_categ])
+    # overwrite categories locally (NOTE: from reviewer's comment to split ligand / glycan)
+    categ_to_resnames = {
+        "protein": ['GLU', 'LEU', 'ALA', 'ASP', 'SER', 'VAL', 'GLY', 'THR', 'ARG',
+                    'PHE', 'TYR', 'ILE', 'PRO', 'ASN', 'LYS', 'GLN', 'HIS', 'TRP',
+                    'MET', 'CYS'],
+        "rna": ['A', 'U', 'G', 'C'],
+        "dna": ['DA', 'DT', 'DG', 'DC'],
+        "ion": ['MG', 'ZN', 'CL', 'CA', 'NA', 'MN', 'K', 'IOD', 'CD', 'CU', 'FE', 'NI',
+                'SR', 'BR', 'CO', 'HG'],
+        "ligand": ['SO4', 'PO4', 'EDO', 'ACT', 'HEM', 'FMT',
+                   'ADP', 'FAD', 'NAD', 'NO3', 'ATP', 'NAP', 'GDP',
+                   'FES', 'FMN', 'GTP', 'PLP', 'MLI', 'ANP', 'H4B',
+                   'AMP', 'NDP', 'SAH', 'OXY'],
+        "lipid": ['PLM', 'CLR', 'CDL', 'RET'],
+        "glycan": ['NAG', 'BGC', 'GLC', 'MAN', 'GAL', 'FUC', 'BMA'],
+    }
+    resname_to_categ = {rn:c for c in categ_to_resnames for rn in categ_to_resnames[c]}
+
+    # extract residue category
+    if np.all([rn in resname_to_categ for rn in subunit['resname']]):
+        t = np.unique([resname_to_categ[rn] for rn in subunit['resname'] if rn in resname_to_categ])
         if len(t) == 1:
             return t.item()
         else:
