@@ -1,4 +1,5 @@
-model_comparison/ProteinMPNN
+results/model_comparison/ProteinMPNN
+results/model_comparison/tmscore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

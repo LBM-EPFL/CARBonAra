@@ -1,5 +1,5 @@
 ### Files summary
-- bc-30.out: Subunits (PDBID_CHAINID) clustering file downloaded from rcsb.org and used for dataset splitting
+- bc-30.out: Subunits (PDBID_CHAINID) clustering file downloaded from rcsb.org and used for dataset splitting at 30% sequence identity
 - subunits_train_set.txt: List of subunits used for training
 - subunits_test_set.txt: List of subunits used to evaluate the model during training
 - subunits_validation_set_cath_subset.txt: List of subunits used to evaluate the trained model and perform comparisons/benchmarks

@@ -7,6 +7,7 @@
 CARBonAra is a deep learning framework that facilitates protein sequence design by leveraging atomic coordinates, allowing for context-aware sequence generation. This method is particularly useful for integrating protein design with molecular environments, including non-protein entities, providing more control to protein engineering.
 
 ## Features
+
 * **Geometric Transformer**: The framework uses a geometric transformer model based only on atomic coordinates and atomic elements, allowing it to handle any protein backbone scaffolds and various molecular environments.
 * **Context Awareness**: CARBonAra's design accounts for molecular environments, including non-protein entities, providing context-aware sequence generation.
 * **Imprint Sequence Sampling**: CARBonAra's imprint sampling method provides diverse sequences, balancing design flexibility with high-confidence predictions.
