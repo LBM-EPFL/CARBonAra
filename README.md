@@ -14,7 +14,7 @@ CARBonAra is a deep learning framework that facilitates protein sequence design 
 
 ## Install
 
-CARBonAra can be easily installed using `pip` and `conda`:
+You can install CARBonAra easily in a few minutes using `pip` and `conda`:
 
 1. Clone the repository:
 ```shell
