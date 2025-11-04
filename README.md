@@ -130,5 +130,4 @@ This work is licensed under a
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
 ## Reference
-
-
+Krapp, L.F., Meireles, F.A., Abriata, L.A. et al. Context-aware geometric deep learning for protein sequence design. Nat Commun 15, 6273 (2024). https://doi.org/10.1038/s41467-024-50571-y
